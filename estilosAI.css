@@ -1,0 +1,100 @@
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffccff; /* Color de fondo estilo "Barbie" */
+    padding: 20px;
+}
+
+/* Estilos para la barra de navegación */
+header {
+    background-color: #ff0080; /* Color fucsia para la barra de navegación */
+    padding: 15px 0; /* Espaciado interno superior e inferior */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Color de texto para los enlaces */
+}
+
+/* Estilos para los formularios */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #660066; /* Borde de los campos de entrada */
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #660066;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para títulos */
+h1 {
+    font-size: 24px;
+    color: #660066; /* Color de texto para los títulos */
+}
+
+/* Estilos para los cursos */
+.curso {
+    display: inline-flex; /* Utilizamos flexbox para alinear los botones horizontalmente */
+    margin-right: 10px;
+}
+
+.curso-button {
+    border: 2px solid #0077cc;
+    background-color: #ccf0ff;
+    padding: 10px;
+    text-align: center;
+    flex-grow: 1; /* Hace que los botones se expandan para tener el mismo tamaño */
+}
+
+.curso-button h2 {
+    color: black;
+    margin: 0;
+}
+
+.enlace-pdf {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.enlace-pdf:hover {
+    text-decoration: underline;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 600px) {
+    .curso {
+        margin-bottom: 10px; /* Agrega un espacio inferior entre los botones en dispositivos móviles */
+    }
+}
+
